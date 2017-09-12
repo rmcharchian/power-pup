@@ -8,11 +8,7 @@
 </head>
 <body>
 
-   <!-- <div ng-include="'views/partials/nav.html'"></div> -->
-   <!-- <div class="container">
-    <h3>Add Your Dog Below</h3>
-      <!-- <h1 id="welcome" class="lead">Welcome, {{uc.userObject.userName}}!</h1> -->
-   <!-- </div>/container -->
+   <div ng-include="'views/partials/nav.html'"></div>
    
    <div ng-controller="DogController as lc">
        <p>Add your doggo below!</p>
@@ -23,13 +19,20 @@
        <label for="breed" aria-placeholder="Breed">Breed</label>
        <input type="text" placeholder ="Breed" ng-model="lc.newDog.breed">
 
+       <label for="birthday" aria-placeholder="Birthday">Birthday</label>
+       <input type="text" placeholder ="Birthday" ng-model="lc.newDog.birthday">
+
+       <!-- FOR MALE FEMALE <label for="birthday" aria-placeholder="Birthday">Birthday</label>
+       <input type="text" placeholder ="Birthday" ng-model="lc.newDog.birthday"> -->
+
        <label for="Image URL" >Image URL</label>
        <input type="text" placeholder ="Image URL Optional "ng-model="sc.newItem.imageurl">
    
        <button ng-click="lc.addDog()">Submit</button>
-   <!--Add shelf items-->
    <br>
-   <br>
+
+
+   <!-- ONCE DOG HAS BEEN ADDED USER SHOULD BE AUTOMATICALLY DIRECTED TO COMMANDS PAGE.  COMMANDS PAGE WILL NOT BE PART OF NAV -->
     
     <!-- THIS IS FROM FILESTACK I DONT UNDERSTAND HOW TO USE IT YET - IT SAID TO PUT IT HERE-->
 <!-- <script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>
