@@ -1,4 +1,4 @@
-# Name of Project
+<!-- # Name of Project
 
 One Paragraph of project description goes here. Link to the live version of the app if it's hosted on Heroku.
 
@@ -62,4 +62,8 @@ Add additional notes about how to deploy this on a live system
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
+* Hat tip to anyone who's code was used -->
+
+## Stretch Goals
+Add male/female to DB and Add a Dog
+

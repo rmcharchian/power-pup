@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add a Dog</title>
+</head>
+<body>
+
+   <!-- <div ng-include="'views/partials/nav.html'"></div> -->
+   <!-- <div class="container">
+    <h3>Add Your Dog Below</h3>
+      <!-- <h1 id="welcome" class="lead">Welcome, {{uc.userObject.userName}}!</h1> -->
+   <!-- </div>/container -->
+   
+   <div ng-controller="DogController as lc">
+       <p>Add your doggo below!</p>
+   
+       <label for="dog_name" aria-placeholder="Dog Name">Dog Name</label>
+       <input type="text" placeholder ="Dog name" ng-model="lc.newDog.dog_name">
+
+       <label for="breed" aria-placeholder="Breed">Breed</label>
+       <input type="text" placeholder ="Breed" ng-model="lc.newDog.breed">
+
+       <label for="Image URL" >Image URL</label>
+       <input type="text" placeholder ="Image URL Optional "ng-model="sc.newItem.imageurl">
+   
+       <button ng-click="lc.addDog()">Submit</button>
+   <!--Add shelf items-->
+   <br>
+   <br>
+    
+    <!-- THIS IS FROM FILESTACK I DONT UNDERSTAND HOW TO USE IT YET - IT SAID TO PUT IT HERE-->
+<!-- <script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>
+<script>
+    var client = filestack.init('AaN98nhRTamCfV3Suca0Zz');
+    function showPicker() {
+        client.pick({
+        }).then(function(result) {
+            console.log(JSON.stringify(result.filesUploaded))
+        });
+    }
+</script>
+<input type="button" value="Upload" onclick="showPicker()" /> -->
+</body>
+</html>
