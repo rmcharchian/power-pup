@@ -84,8 +84,8 @@ button.accordion {
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
-  text-align: left;
+  width: 50%;
+  text-align: center;
   border: none;
   outline: none;
   transition: 0.4s;
