@@ -10,8 +10,11 @@
 
    <div ng-include="'views/partials/nav.html'"></div>
    
-   <div ng-controller="DogController as lc">
-       <p>Add your doggo below!</p>
+
+       <p>Add information about what commands will can be taught and what user can do once their dog is added.</p>
+       <p>Let's get started!</p>
+
+       {{lc}}
    
        <label for="dog_name" aria-placeholder="Dog Name">Dog Name</label>
        <input type="text" placeholder ="Dog name" ng-model="lc.newDog.dog_name">
@@ -19,16 +22,10 @@
        <label for="breed" aria-placeholder="Breed">Breed</label>
        <input type="text" placeholder ="Breed" ng-model="lc.newDog.breed">
 
-       <label for="birthday" aria-placeholder="Birthday">Birthday</label>
-       <input type="text" placeholder ="Birthday" ng-model="lc.newDog.birthday">
-
-       <!-- FOR MALE FEMALE <label for="birthday" aria-placeholder="Birthday">Birthday</label>
-       <input type="text" placeholder ="Birthday" ng-model="lc.newDog.birthday"> -->
-
        <label for="Image URL" >Image URL</label>
-       <input type="text" placeholder ="Image URL Optional "ng-model="sc.newItem.imageurl">
+       <input type="text" placeholder ="Image URL Optional "ng-model="lc.newDog.imageurl">
    
-       <button ng-click="lc.addDog()">Submit</button>
+       <button ng-click="lc.addDog(lc.newDog)">Submit</button>
    <br>
 
 

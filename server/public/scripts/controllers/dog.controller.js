@@ -1,6 +1,13 @@
-myApp.controller('DogController', function(UserService) {
+myApp.controller('DogController', function(DogService) {
     console.log('DogController created');
     var vm = this;
-    vm.userService = UserService;
+
+    vm.addDog = function (newDog){
+      DogService.addDog(newDog);
+      console.log(newDog);
+    }
+    vm.dogs = DogService.dogs;
+
+
   });
   
