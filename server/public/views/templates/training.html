@@ -9,14 +9,22 @@
 <body>
     <div ng-include="'views/partials/nav.html'"></div>
 
+
+
+{{lc}}
+{{vm}}
+
 <div class="container">
         <h2>Training Progress Report for "Dog Name"</h2>
         <p>Description of what to do with each day and reps</p>            
-        <table class="table">
+        <table class="table table-striped">
           <thead>
+            <tr>Day 1</tr>  
             <tr>
               <th>Command</th>
               <th>Day 1</th>
+              <th># Cmpt</th>
+              <th>+ Reps</th>
               <th>Day 2</th>
               <th>Day 3</th>
               <th>Day 4</th>
@@ -27,8 +35,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Sit</td>
-             
+              <td ng-repeat="commands in lc.</td> 
             </tr>
             <tr>
               <td>Down</td>

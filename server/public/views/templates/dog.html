@@ -14,8 +14,19 @@
        <p>Add information about what commands will can be taught and what user can do once their dog is added.</p>
        <p>Let's get started!</p>
 
-       {{lc}}
-   
+       <h5>Dogs currently in training</h5>
+        <div class="allDogs"> 
+        <ul>    
+            <li ng-repeat = "dogs in lc.dogs.list">
+                {{dogs.dog_name}}
+
+            </li>
+        </ul>    
+       <!-- {{lc}} -->
+        </div>
+        <br>
+        <br>
+
        <label for="dog_name" aria-placeholder="Dog Name">Dog Name</label>
        <input type="text" placeholder ="Dog name" ng-model="lc.newDog.dog_name">
 

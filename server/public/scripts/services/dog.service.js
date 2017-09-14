@@ -51,7 +51,7 @@ myApp.service('DogService', ['$http', function ($http) {
         //         self.getitem();
         //     })
         // }
-   
+        self.getDog();
 }]);
 
 

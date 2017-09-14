@@ -17,10 +17,6 @@ myApp.config(function($routeProvider, $locationProvider) {
     templateUrl: '/views/templates/dog.html',
     controller: 'DogController as lc'
     })
-    .when('/commands', {  
-      templateUrl: '/views/templates/commands.html',
-      controller: 'CommandsController as lc'
-      })
       .when('/training', {  
         templateUrl: '/views/templates/training.html',
         controller: 'TrainingController as lc'
