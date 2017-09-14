@@ -81,4 +81,6 @@ li a:hover {
 
 .allDogs li {
   float: none;
+  text-align: center;
+  text-decoration-color: black;
 }

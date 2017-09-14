@@ -14,12 +14,11 @@
        <p>Add information about what commands will can be taught and what user can do once their dog is added.</p>
        <p>Let's get started!</p>
 
-       <h5>Dogs currently in training</h5>
+       <h5><center>Dogs Currently in Training</center></h5>
         <div class="allDogs"> 
         <ul>    
-            <li ng-repeat = "dogs in lc.dogs.list">
-                {{dogs.dog_name}}
-
+            <li ng-repeat = "dog in lc.dogs.list">
+                <a ng-href="/#!/commands/{{dog.id}}">{{dog.dog_name}}</a>
             </li>
         </ul>    
        <!-- {{lc}} -->
