@@ -67,7 +67,8 @@ li {
 
 li a {
   display: block;
-  color: white;
+  /* color: white; */
+  color: black
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -76,11 +77,16 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   text-decoration: underline;
-  color: #eee;
+  /* color: #eee; */
+  color: black
 }
 
 .allDogs li {
   float: none;
   text-align: center;
   text-decoration-color: black;
+}
+
+#scraps {
+  color: black
 }
