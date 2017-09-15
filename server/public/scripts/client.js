@@ -21,9 +21,9 @@ myApp.config(function($routeProvider, $locationProvider) {
         templateUrl: '/views/templates/training.html',
         controller: 'TrainingController as lc'
         }) 
-    .when('/command', {
-      templateUrl: '/views/templates/commands.html',
-      controller: 'CommandsController as lc'
+    .when('/commands', {
+      templateUrl: '/views/templates/info.html',
+      controller: 'CommandsController as cc'
     })    
     .when('/user', {
       templateUrl: '/views/templates/user.html',
@@ -36,7 +36,7 @@ myApp.config(function($routeProvider, $locationProvider) {
     })
     .when('/info', {
       templateUrl: '/views/templates/info.html',
-      controller: 'InfoController',
+      controller: 'CommandsController as cc',
       resolve: {
         getuser : function(UserService){
           return UserService.getuser();
@@ -47,3 +47,25 @@ myApp.config(function($routeProvider, $locationProvider) {
       redirectTo: 'home'
     });
 });
+
+// var self = this;
+// var filestackAPIKey = 'AaN98nhRTamCfV3Suca0Zz';
+
+
+
+// self.getFilestackImage = function() {
+//   // example request:
+//   // http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5
+//   var baseUrl = 'http://api.giphy.com/v1/gifs/trending?';
+//   baseUrl += 'api_key=' + giphyAPIKey;    // api key
+//   baseUrl += '&limit=5';  // limit
+//   baseUrl += '&rating=g'; // rating
+
+//   console.log('baseUrl: ', baseUrl);
+  
+//   $http.get(baseUrl).then(function(response) {
+//       console.log('trendaing giphys ', response.data);
+      
+//   });
+// };
+
