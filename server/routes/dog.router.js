@@ -30,8 +30,8 @@ router.post('/', function(req, res){
 			res.sendStatus(500);
 		} else {
 			// when connecting to database worked!
-            client.query('INSERT INTO dogs (dog_id, dog_name, breed) VALUES ($1, $2, $3);', 
-            [req.body.dog_id, req.body.dog_name, req.body.breed], function(errorMakingQuery, result) {
+            client.query('INSERT INTO dogs (dog_name, breed, user_id) VALUES ($1, $2, $3);', 
+            [req.body.dog_name, req.body.breed, req.user.id], function(errorMakingQuery, result) {
 				done();
 				if(errorMakingQuery) {
 					console.log('Error making database query', errorMakingQuery);
