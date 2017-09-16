@@ -24,7 +24,11 @@ myApp.config(function($routeProvider, $locationProvider) {
     .when('/commands', {
       templateUrl: '/views/templates/info.html',
       controller: 'CommandsController as cc'
-    })    
+    })  
+    .when('/as_needed_commands', {
+      templateUrl: '/views/templates/info.html',
+      controller: 'AsNeededCommandsController as cc'
+    }) 
     .when('/user', {
       templateUrl: '/views/templates/user.html',
       controller: 'UserController as uc',

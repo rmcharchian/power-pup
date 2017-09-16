@@ -8,10 +8,7 @@
 
     The seven commands below are recommended for your training program and will send you well on your way to an obediant dog.
 
-    <h5><center>Recommended Commands for Training</center></h5>
-
-
-
+    <h5><center>Commands for Scheduled Training</center></h5>
     <div ng-controller="CommandsController as cc">
         
         <table class="table table-striped">
@@ -29,22 +26,31 @@
               <td>{{command.teach}}
             </tr>  
           </tbody>
-        </table> -->
- 
-
-
-    <div class="allCommands"> 
-    <ul>    
-        <li ng-repeat = "command in cc.commands.list">
-            {{command.command}}
-        </li>
-    </ul>  
-
-   {{cc}} 
-
-    </div>
+        </table> 
   </p>
-  <p>If you are ready to get started today, select Add a Dog and let the training begin!</p>
-   
-
 </div>
+
+<h5><center>Commands for As Needed Training</center></h5>
+
+
+<div ng-controller="AsNeededCommandsController as cc">
+         
+     <table class="table table-striped">
+       <thead>
+         <tr >
+           <th>Command</th>
+           <th>Description</th>
+           <th>Teach</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr ng-repeat =  "command in cc.as_needed_commands.list">
+           <td>{{command.command}}</td>
+           <td>{{command.description}}</td>
+           <td>{{command.teach}}
+         </tr>  
+           </tbody>
+         </table>    
+</div
+
+<p>If you are ready to get started today, select Add a Dog and let the training begin!</p>

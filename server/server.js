@@ -11,6 +11,7 @@ var userRouter = require('./routes/user.router');
 var registerRouter = require('./routes/register.router');
 var dogRouter = require('./routes/dog.router');
 var commandsRouter = require('./routes/commands.router');
+var as_needed_commandsRouter = require('./routes/as_needed_commands.router');
 
 
 var port = process.env.PORT || 5000;
@@ -34,6 +35,7 @@ app.use('/register', registerRouter);
 app.use('/user', userRouter);
 app.use('/dog', dogRouter);
 app.use('/commands', commandsRouter);
+app.use('/as_needed_commands', as_needed_commandsRouter);
 
 // Catch all bucket, must be last!
 app.use('/', indexRouter);
