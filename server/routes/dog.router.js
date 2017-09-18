@@ -3,22 +3,26 @@ var router = require('express').Router();
 var pool = require('../modules/pool');
 
 router.get('/', function(req, res){
-    pool.connect(function(errorConnectingToDatabase, client, done){
+    if(req.isAuthenticated()){
+    pool.connect(function(errorConnectingToDatabase, client, done){ 
         if(errorConnectingToDatabase) {
             console.log('Error connecting to Database', errorConnectingToDatabase);
             res.sendStatus(500);
         } else {
-            client.query('SELECT * FROM dogs', function (errorMakingQuery, result) {
+            client.query('SELECT * FROM dogs WHERE user_id = $1', [req.user.id], function (errorMakingQuery, result) {
                 if(errorMakingQuery) {
                     console.log('Error Making Query', errorMakingQuery);
                     res.sendStatus(500);
                 } else {
                     res.send(result.rows);
                 }
-            });
-        }
-    });
-});
+            }); //end of query
+        } //end of else
+    }); //end of pool
+    } else {
+        res.sendStatus(403);
+    }
+}); //end of get
 
 router.post('/', function(req, res){
 	console.log('dog post was hit!');

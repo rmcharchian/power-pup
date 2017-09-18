@@ -8,6 +8,6 @@ myApp.controller('DogController', function(DogService) {
     }
     vm.dogs = DogService.dogs;
 
-
+    DogService.getDog();
   });
   
