@@ -1,0 +1,132 @@
+<div ng-include="'views/partials/nav.html'"></div>
+<div class="container">
+  <p>
+    Over the next 7 days your dog training team will spend 10-15 on one of the commands to be taught and check off each repetition of this command that has been completed.  When the 3rd checkbox has been completed, move to the next day and begin again.  At the end of 7 days your dog should understand the command you've taught him.
+  </p>
+  <!-- <p>  
+    <h5><center>THIS SHOULD BE THE INDIVIDUAL DOGS NAME</center></h5>
+    <div ng-controller="CommandsController as cc">
+        
+        <table class="table table-striped">
+          <thead>
+            <tr >
+              <th>Days 1-7</th>
+              <th>Rep 1</th>
+              <th>Rep 2</th>
+              <th>Rep 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat =  "command in cc.commands.list">
+              <td>{{command.command}}</td>
+              <!-- <td>{{command.description}}</td> -->
+              <!-- <td>{{command.teach}}
+            </tr>  
+          </tbody>
+        </table> 
+  </p>  -->
+<!-- </div> --> 
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Command</th>
+          <th>Day 1</th>
+          <th>Day 2</th> 
+          <th>Day 3</th>
+          <th>Day 4</th>
+          <th>Day 5</th>
+          <th>Day 6</th>
+          <th>Day 7</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sit</td>  
+          <!-- Sit should eventually come in from Database -->
+          <td><div class="btn-group">
+<button type="button" class="btn btn-danger">Teach Rep</button>
+<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+  <span class="caret"></span>
+  <span class="sr-only">Toggle Dropdown</span>
+</button>
+<ul class="dropdown-menu" role="menu">
+  <li><a href="#">Rep 1</a></li>
+  <li><a href="#">Rep 2</a></li>
+  <li><a href="#">Rep3</a></li>
+  <li class="divider"></li>
+  <li><a href="#">Separated link</a></li>
+</ul>
+</div></td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><div class="btn-group">
+<button type="button" class="btn btn-danger">Action</button>
+<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+  <span class="caret"></span>
+  <span class="sr-only">Toggle Dropdown</span>
+</button>
+<ul class="dropdown-menu" role="menu">
+  <li><a href="#">Action</a></li>
+  <li><a href="#">Another action</a></li>
+  <li><a href="#">Something else here</a></li>
+  <li class="divider"></li>
+  <li><a href="#">Separated link</a></li>
+</ul>
+</div></td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+           <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><div class="btn-group">
+<button type="button" class="btn btn-danger">Action</button>
+<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+  <span class="caret"></span>
+  <span class="sr-only">Toggle Dropdown</span>
+</button>
+<ul class="dropdown-menu" role="menu">
+  <li><a href="#">Action</a></li>
+  <li><a href="#">Another action</a></li>
+  <li><a href="#">Something else here</a></li>
+  <li class="divider"></li>
+  <li><a href="#">Separated link</a></li>
+</ul>
+</div></td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+          <td>Table cell</td>
+        </tr>
+      </tbody>
+</table>
+</div>
