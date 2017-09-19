@@ -1,2 +1,686 @@
-This is a dog page.
-{{ec}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog Training Page</title>
+</head>
+<body>
+        <div ng-include="'views/partials/nav.html'"></div>
+        <p>Training Page for {{currentDog.dog_name}}</p>
+        This is a dog page.
+        {{ec}}
+        <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Command</th>
+                      <th>Day 1</th>
+                      <th>Day 2</th>
+                      <th>Day 3</th>
+                      <th>Day 4</th>
+                      <th>Day 5</th>
+                      <th>Day 6</th>
+                      <th>Day 7</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sit</td>
+                      <!-- Sit should eventually come in from Database -->
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary">Rep</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                         </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Rep 1</a></li>
+                            <li><a href="#">Rep 2</a></li>
+                            <li><a href="#">Rep 3</a></li>
+                            <li class="divider"></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary">Rep</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+              </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Rep 1</a></li>
+                            <li><a href="#">Rep 2</a></li>
+                            <li><a href="#">Rep 3</a></li>
+                            <li class="divider"></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary">Rep</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Rep 1</a></li>
+                            <li><a href="#">Rep 2</a></li>
+                            <li><a href="#">Rep 3</a></li>
+                            <li class="divider"></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary">Rep</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Rep 1</a></li>
+                            <li><a href="#">Rep 2</a></li>
+                            <li><a href="#">Rep 3</a></li>
+                            <li class="divider"></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary">Rep</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Rep 1</a></li>
+                            <li><a href="#">Rep 2</a></li>
+                            <li><a href="#">Rep 3</a></li>
+                            <li class="divider"></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary">Rep</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Rep 1</a></li>
+                            <li><a href="#">Rep 2</a></li>
+                            <li><a href="#">Rep 3</a></li>
+                            <li class="divider"></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary">Rep</button>
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Rep 1</a></li>
+                            <li><a href="#">Rep 2</a></li>
+                            <li><a href="#">Rep 3</a></li>
+                            <li class="divider"></li>
+                          </ul>
+                        </div>
+                      </td>
+                      <tr>
+                        <td>Down</td>
+                        <!-- Sit should eventually come in from Database -->
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Rep</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Rep 1</a></li>
+                              <li><a href="#">Rep 2</a></li>
+                              <li><a href="#">Rep 3</a></li>
+                              <li class="divider"></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Rep</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Rep 1</a></li>
+                              <li><a href="#">Rep 2</a></li>
+                              <li><a href="#">Rep 3</a></li>
+                              <li class="divider"></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Rep</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Rep 1</a></li>
+                              <li><a href="#">Rep 2</a></li>
+                              <li><a href="#">Rep 3</a></li>
+                              <li class="divider"></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Rep</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Rep 1</a></li>
+                              <li><a href="#">Rep 2</a></li>
+                              <li><a href="#">Rep 3</a></li>
+                              <li class="divider"></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Rep</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                          <span class="caret"></span>
+                          <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Rep 1</a></li>
+                              <li><a href="#">Rep 2</a></li>
+                              <li><a href="#">Rep 3</a></li>
+                              <li class="divider"></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Rep</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Rep 1</a></li>
+                              <li><a href="#">Rep 2</a></li>
+                              <li><a href="#">Rep 3</a></li>
+                              <li class="divider"></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Rep</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Rep 1</a></li>
+                              <li><a href="#">Rep 2</a></li>
+                              <li><a href="#">Rep 3</a></li>
+                              <li class="divider"></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <tr>
+                          <td>Stay</td>
+                          <!-- Sit should eventually come in from Database -->
+                          <td>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary">Rep</button>
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Rep 1</a></li>
+                                <li><a href="#">Rep 2</a></li>
+                                <li><a href="#">Rep 3</a></li>
+                                <li class="divider"></li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary">Rep</button>
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                          <span class="caret"></span>
+                          <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Rep 1</a></li>
+                                <li><a href="#">Rep 2</a></li>
+                                <li><a href="#">Rep 3</a></li>
+                                <li class="divider"></li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary">Rep</button>
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Rep 1</a></li>
+                                <li><a href="#">Rep 2</a></li>
+                                <li><a href="#">Rep 3</a></li>
+                                <li class="divider"></li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary">Rep</button>
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Rep 1</a></li>
+                                <li><a href="#">Rep 2</a></li>
+                                <li><a href="#">Rep 3</a></li>
+                                <li class="divider"></li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary">Rep</button>
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Rep 1</a></li>
+                                <li><a href="#">Rep 2</a></li>
+                                <li><a href="#">Rep 3</a></li>
+                                <li class="divider"></li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary">Rep</button>
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Rep 1</a></li>
+                                <li><a href="#">Rep 2</a></li>
+                                <li><a href="#">Rep 3</a></li>
+                                <li class="divider"></li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-primary">Rep</button>
+                              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Rep 1</a></li>
+                                <li><a href="#">Rep 2</a></li>
+                                <li><a href="#">Rep 3</a></li>
+                                <li class="divider"></li>
+                              </ul>
+                            </div>
+                          </td>
+                          <tr>
+                            <td>No</td>
+                            <!-- Sit should eventually come in from Database -->
+                            <td>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Rep</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">Rep 1</a></li>
+                                  <li><a href="#">Rep 2</a></li>
+                                  <li><a href="#">Rep 3</a></li>
+                                  <li class="divider"></li>
+                                </ul>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Rep</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">Rep 1</a></li>
+                                  <li><a href="#">Rep 2</a></li>
+                                  <li><a href="#">Rep 3</a></li>
+                                  <li class="divider"></li>
+                                </ul>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Rep</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">Rep 1</a></li>
+                                  <li><a href="#">Rep 2</a></li>
+                                  <li><a href="#">Rep 3</a></li>
+                                  <li class="divider"></li>
+                                </ul>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Rep</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">Rep 1</a></li>
+                                  <li><a href="#">Rep 2</a></li>
+                                  <li><a href="#">Rep 3</a></li>
+                                  <li class="divider"></li>
+                                </ul>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Rep</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                      <span class="caret"></span>
+                                      <span class="sr-only">Toggle Dropdown</span>
+                                      </button>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">Rep 1</a></li>
+                                  <li><a href="#">Rep 2</a></li>
+                                  <li><a href="#">Rep 3</a></li>
+                                  <li class="divider"></li>
+                                </ul>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Rep</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">Rep 1</a></li>
+                                  <li><a href="#">Rep 2</a></li>
+                                  <li><a href="#">Rep 3</a></li>
+                                  <li class="divider"></li>
+                                </ul>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Rep</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                          <span class="caret"></span>
+                                          <span class="sr-only">Toggle Dropdown</span>
+                                          </button>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">Rep 1</a></li>
+                                  <li><a href="#">Rep 2</a></li>
+                                  <li><a href="#">Rep 3</a></li>
+                                  <li class="divider"></li>
+                                </ul>
+                              </div>
+                            </td>
+                            <tr>
+                              <td>Come</td>
+                              <!-- Sit should eventually come in from Database -->
+                              <td>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-primary">Rep</button>
+                                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Rep 1</a></li>
+                                    <li><a href="#">Rep 2</a></li>
+                                    <li><a href="#">Rep 3</a></li>
+                                    <li class="divider"></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-primary">Rep</button>
+                                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Rep 1</a></li>
+                                    <li><a href="#">Rep 2</a></li>
+                                    <li><a href="#">Rep 3</a></li>
+                                    <li class="divider"></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-primary">Rep</button>
+                                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Rep 1</a></li>
+                                    <li><a href="#">Rep 2</a></li>
+                                    <li><a href="#">Rep 3</a></li>
+                                    <li class="divider"></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-primary">Rep</button>
+                                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                      <span class="caret"></span>
+                                      <span class="sr-only">Toggle Dropdown</span>
+                                      </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Rep 1</a></li>
+                                    <li><a href="#">Rep 2</a></li>
+                                    <li><a href="#">Rep 3</a></li>
+                                    <li class="divider"></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-primary">Rep</button>
+                                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Rep 1</a></li>
+                                    <li><a href="#">Rep 2</a></li>
+                                    <li><a href="#">Rep 3</a></li>
+                                    <li class="divider"></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-primary">Rep</button>
+                                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                          <span class="caret"></span>
+                                          <span class="sr-only">Toggle Dropdown</span>
+                                          </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Rep 1</a></li>
+                                    <li><a href="#">Rep 2</a></li>
+                                    <li><a href="#">Rep 3</a></li>
+                                    <li class="divider"></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-primary">Rep</button>
+                                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Rep 1</a></li>
+                                    <li><a href="#">Rep 2</a></li>
+                                    <li><a href="#">Rep 3</a></li>
+                                    <li class="divider"></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <tr>
+                                <td>Heel</td>
+                                <!-- Sit should eventually come in from Database -->
+                                <td>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">Rep</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Rep 1</a></li>
+                                      <li><a href="#">Rep 2</a></li>
+                                      <li><a href="#">Rep 3</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">Rep</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Rep 1</a></li>
+                                      <li><a href="#">Rep 2</a></li>
+                                      <li><a href="#">Rep 3</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">Rep</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                      <span class="caret"></span>
+                                      <span class="sr-only">Toggle Dropdown</span>
+                                      </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Rep 1</a></li>
+                                      <li><a href="#">Rep 2</a></li>
+                                      <li><a href="#">Rep 3</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">Rep</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Rep 1</a></li>
+                                      <li><a href="#">Rep 2</a></li>
+                                      <li><a href="#">Rep 3</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">Rep</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                          <span class="caret"></span>
+                                          <span class="sr-only">Toggle Dropdown</span>
+                                          </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Rep 1</a></li>
+                                      <li><a href="#">Rep 2</a></li>
+                                      <li><a href="#">Rep 3</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">Rep</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Rep 1</a></li>
+                                      <li><a href="#">Rep 2</a></li>
+                                      <li><a href="#">Rep 3</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">Rep</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                              <span class="caret"></span>
+                                              <span class="sr-only">Toggle Dropdown</span>
+                                              </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Rep 1</a></li>
+                                      <li><a href="#">Rep 2</a></li>
+                                      <li><a href="#">Rep 3</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                  </tbody>
+                </table>
+              </div>
+            
+
+
+</body>
+</html>
+
