@@ -4,6 +4,7 @@ myApp.service('DogService', ['$http', function ($http) {
     var self = this;
     //var filestackAPIKey = AaN98nhRTamCfV3Suca0Zz;
     self.dogs = {list: []};
+    self.currentDog={details:{}};
 
 
         self.getDog=function () {
@@ -22,6 +23,19 @@ myApp.service('DogService', ['$http', function ($http) {
             })
         }
 
+        self.getDetails = function(dogId){
+            $http({
+                method: 'GET',
+                url: '/dog/details',
+                params: {
+                    id: dogId
+                }
+            }).then(function(response){
+                self.currentDog.details = response.data;
+                console.log('details gotten')
+            });
+        };   
+self.getDetails();
         // self.getFilestackImage = function() {
         //     // example request:
         //     // http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5
