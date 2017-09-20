@@ -10,28 +10,7 @@
 
 <body>
   <div ng-include="'views/partials/nav.html'"></div>
-  <!-- 
-        <p>Training Page for</p>
-        <h1 id="dogname" class="trainpage">Training page for {{dog.dog_name}}.</h1>
-        <a ng-href="#/eachdog/{{dog.id}}">Training page for {{dog.dog_name}}.</a>
-        This is a dog page. -->
-  <!-- {{ec.currentDog.details}} -->
-  <!-- <ul>
-    <li ng-repeat="command in ec.currentDog.details">{{command.command}}</li>
-  </ul> -->
-
-  <!-- <tr ng-repeat =  "dog in ec.eachdog.list">
-          <td>{{dogs_commands.dog_id}}</td>
-          <td>{{dogs_commands.commands_id}}</td>
-        </tr>  
-          </tbody> -->
-
-  <select>
-    <option value="0">Test 0 Select Box</option>
-    <option value="1">Test 1 Select Box</option>
-    <option value="2">Test 2 Select Box</option>
-    <option value="3">Test 3 Select Box</option>
-  </select>
+ 
 
 
   <div class="table-responsive">
@@ -50,124 +29,27 @@
       </thead>
       <tbody>
         <tr ng-repeat="command in ec.currentDog.details">
-          <td>{{command.command}}</td>
-          <td>{{command.day1}}</td>
-          <td>{{command.day2}}</td>
-          <td>{{command.day3}}</td>
-          <td>{{command.day4}}</td>
-          <td>{{command.day5}}</td>
-          <td>{{command.day6}}</td>
-          <td>{{command.day7}}</td>
-        <<tr ng-repeat="day1 in ec.currentDog.details">
-            <td!-- >{{day1.day1}}</td> -->
-
-          <td ng-repeat="day1 in ec.currentDog.details">
-            <
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary">Rep</button>
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                         </button>
-              <ul class="dropdown-menu" role="menu">
-                <li ng-repeat="day1 in ec.currentDog.details"><a href="#">Rep 1</a></li>
-                <!-- <li><a href="#">Rep 2</a></li>
-                <li><a href="#">Rep 3</a></li> -->
-                <li class="divider"></li>
-              </ul>
-            </div>
+            <td>{{command.command}}</td>
+            <td><select>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              {{command.day1}}</td>
+            <td>{{command.day2}}</td>
+            <td>{{command.day3}}</td>
+            <td>{{command.day4}}</td>
+            <td>{{command.day5}}</td>
+            <td>{{command.day6}}</td>
+            <td>{{command.day7}}</td>
+        </tr>        
           </td>
-          <td>
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary">Rep</button>
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                          </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Rep 1</a></li>
-                <li><a href="#">Rep 2</a></li>
-                <li><a href="#">Rep 3</a></li>
-                <li class="divider"></li>
-              </ul>
-            </div>
-          </td>
-          <td>
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary">Rep</button>
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                          </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Rep 1</a></li>
-                <li><a href="#">Rep 2</a></li>
-                <li><a href="#">Rep 3</a></li>
-                <li class="divider"></li>
-              </ul>
-            </div>
-          </td>
-          <td>
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary">Rep</button>
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                          </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Rep 1</a></li>
-                <li><a href="#">Rep 2</a></li>
-                <li><a href="#">Rep 3</a></li>
-                <li class="divider"></li>
-              </ul>
-            </div>
-          </td>
-          <td>
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary">Rep</button>
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Rep 1</a></li>
-                <li><a href="#">Rep 2</a></li>
-                <li><a href="#">Rep 3</a></li>
-                <li class="divider"></li>
-              </ul>
-            </div>
-          </td>
-          <td>
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary">Rep</button>
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                      </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Rep 1</a></li>
-                <li><a href="#">Rep 2</a></li>
-                <li><a href="#">Rep 3</a></li>
-                <li class="divider"></li>
-              </ul>
-            </div>
-          </td>
-          <td>
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary">Rep</button>
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                        <span class="caret"></span>
-                        <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Rep 1</a></li>
-                <li><a href="#">Rep 2</a></li>
-                <li><a href="#">Rep 3</a></li>
-                <li class="divider"></li>
-              </ul>
-            </div>
-          </td>
-          </tr>
+          <!-- <td>           
+          </td> -->
+          <!-- <td>          
+          </td> -->
+          <!-- </tr> -->
       </tbody>
     </table>
   </div>
