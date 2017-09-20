@@ -30,19 +30,55 @@
       <tbody>
         <tr ng-repeat="command in ec.currentDog.details">
             <td>{{command.command}}</td>
-            <td><select>
+            <td><select ng-model="command.day1">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-              </select>
-              {{command.day1}}</td>
-            <td>{{command.day2}}</td>
-            <td>{{command.day3}}</td>
-            <td>{{command.day4}}</td>
-            <td>{{command.day5}}</td>
-            <td>{{command.day6}}</td>
-            <td>{{command.day7}}</td>
+              </select></td>
+              <!-- {{command.day1}}</td> -->
+            <td><select ng-model="command.day2">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select></td>  
+            <!-- <td>{{command.day2}}</td> -->
+            <td><select ng-model="command.day3">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select></td>
+            <!-- <td>{{command.day3}}</td> -->
+            <td><select ng-model="command.day4">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select></td>
+            <!-- <td>{{command.day4}}</td> -->
+            <td><select ng-model="command.day5">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select></td>
+            <!-- <td>{{command.day5}}</td> -->
+            <td><select ng-model="command.day6">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select></td>
+            <!-- <td>{{command.day6}}</td> -->
+            <td><select ng-model="command.day7">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select></td>
+            <!-- <td>{{command.day7}}</td> -->
         </tr>        
           </td>
           <!-- <td>           
