@@ -36,7 +36,7 @@ router.post('/', function(req, res){
 			// when connecting to database worked!
             client.query('INSERT INTO dogs (dog_name, breed, user_id) VALUES ($1, $2, $3);', 
             [req.body.dog_name, req.body.breed, req.user.id], function(errorMakingQuery, result) {
-				//done();
+				done();
 				if(errorMakingQuery) {
 					console.log('Error making database query', errorMakingQuery);
 					res.sendStatus(500);
@@ -54,8 +54,11 @@ router.get('/details', function(req, res){
             console.log('Error connecting to Database', errorConnectingToDatabase);
             res.sendStatus(500);
         } else {
-            client.query('SELECT * FROM dogs WHERE id=$1', [req.query.id], function (errorMakingQuery, result) {
-                //done();
+            client.query(`SELECT * FROM dogs 
+            JOIN dogs_commands ON dogs.id = dogs_commands.dog_id
+            JOIN commands ON commands.id = dogs_commands.commands_id
+            WHERE dogs.id = $1;`, [req.query.id], function (errorMakingQuery, result) {
+                done();
                 if(errorMakingQuery) {
                     console.log('Error Making Query', errorMakingQuery);
                     res.sendStatus(500);
