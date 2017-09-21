@@ -27,60 +27,30 @@
           <th>Day 7</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody >
         <tr ng-repeat="command in ec.currentDog.details">
             <td>{{command.command}}</td>
-            <td><select ng-model="command.day1" ng-options="rep for rep in [0,1,2,3]">
-                <!-- <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option> -->
+            <td><select ng-change="ec.updateTraining(command)" ng-model="command.day1" ng-options="rep for rep in [0,1,2,3]">
               </select></td>
-            <!-- {{command.day1}}</td> -->
-            <td><select ng-model="command.day2" ng-options="rep for rep in [0,1,2,3]">
-                <!-- <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option> -->
+            <td><select ng-change="ec.updateTraining(command)" ng-model="command.day2" ng-options="rep for rep in [0,1,2,3]">
                 </select></td>  
-            <!-- <td>{{command.day2}}</td> -->
-            <td><select ng-model="command.day3" ng-options="rep for rep in [0,1,2,3]">
-                <!-- <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option> -->
+            <td><select ng-change="ec.updateTraining(command)" ng-model="command.day3" ng-options="rep for rep in [0,1,2,3]">
                 </select></td>
-            <!-- <td>{{command.day3}}</td> -->
-            <td><select ng-model="command.day4" ng-options="rep for rep in [0,1,2,3]">
-                <!-- <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option> -->
+            <td><select ng-change="ec.updateTraining(command)" ng-model="command.day4" ng-options="rep for rep in [0,1,2,3]">
                 </select></td>
-            <!-- <td>{{command.day4}}</td> -->
-            <td><select ng-model="command.day5" ng-options="rep for rep in [0,1,2,3]">
-                <!-- <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option> -->
+            <td><select ng-change="ec.updateTraining(command)" ng-model="command.day5" ng-options="rep for rep in [0,1,2,3]">
                 </select></td>
-            <!-- <td>{{command.day5}}</td> -->
-            <td><select ng-model="command.day6" ng-options="rep for rep in [0,1,2,3]">
-                <!-- <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option> -->
+            <td><select ng-change="ec.updateTraining(command)" ng-model="command.day6" ng-options="rep for rep in [0,1,2,3]">
                 </select></td>
-            <!-- <td>{{command.day6}}</td> -->
-            <td><select ng-model="command.day7" ng-options="rep for rep in [0,1,2,3]">
-                <!-- <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option> -->
+            <td><select ng-change="ec.updateTraining(command)" ng-model="command.day7" ng-options="rep for rep in [0,1,2,3]">
                 </select></td>
-            <!-- <td>{{command.day7}}</td> -->
         </tr>        
           </td>
+      
+          {{ec.currentDog.details.day1}}
+
+
+
           <!-- <td>           
           </td> -->
           <!-- <td>          
@@ -88,6 +58,7 @@
           <!-- </tr> -->
       </tbody>
     </table>
+    <button ng-click="lc.addDog(lc.newDog)">Training Complete - Delete Dog</button>
   </div>
 
 </body>

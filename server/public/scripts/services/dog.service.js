@@ -34,7 +34,20 @@ myApp.service('DogService', ['$http', function ($http) {
                 self.currentDog.details = response.data;
                 console.log('details gotten')
             });
-        };   
+        }; 
+        
+        self.updateTraining = function(command){
+            $http({
+                method: 'PUT',
+                url: '/dog/details',
+                data: command, 
+            }).then(function(response){
+                console.log('update received')
+                self.getDetails(command.dog_id);
+            });
+        }; 
+
+
 self.getDetails();
         // self.getFilestackImage = function() {
         //     // example request:
