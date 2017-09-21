@@ -47,9 +47,26 @@ myApp.service('DogService', ['$http', function ($http) {
             });
         }; 
 
+        self.deleteDog = function(dogId){
+            console.log('delete button clicked');
+            $http({
+                method: 'DELETE',
+                url: '/dog/' + dogId
+            }).then(function (response){
+            self.getDog();    
+            });
+        };   
+
+
 
 self.getDetails();
-        // self.getFilestackImage = function() {
+
+        
+}]);
+
+
+
+       // self.getFilestackImage = function() {
         //     // example request:
         //     // http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5
         //     var baseUrl = 'https://www.filestackapi.com/api/file/DCL5K46FS3OIxb5iuKby';
@@ -66,21 +83,3 @@ self.getDetails();
         // };
     
         // self.getFilestackImage();
-
-
-
-
-        // self.deleteitem=function (itemid) {
-        //     console.log('delete button clicked');
-        //     $http.delete('/shelf/shelf/' + itemid).then(function (response) {
-        //         console.log('delete item', response);
-        //         // self.shelfItems.list = response.data;
-        //         self.getitem();
-        //     })
-        // }
-        
-}]);
-
-
-
-
