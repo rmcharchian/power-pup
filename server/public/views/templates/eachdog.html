@@ -11,8 +11,6 @@
 <body>
   <div ng-include="'views/partials/nav.html'"></div>
  
-
-
   <div class="table-responsive">
     <table class="table table-bordered">
       <thead>
@@ -45,12 +43,7 @@
             <td><select ng-change="ec.updateTraining(command)" ng-model="command.day7" ng-options="rep for rep in [0,1,2,3]">
                 </select></td>
         </tr>        
-          </td>
-      
-          {{ec.currentDog.details.day1}}
-
-
-
+          </td> 
           <!-- <td>           
           </td> -->
           <!-- <td>          

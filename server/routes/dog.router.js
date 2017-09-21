@@ -34,7 +34,22 @@ router.post('/', function(req, res){
 			res.sendStatus(500);
 		} else {
 			// when connecting to database worked!
-            client.query('INSERT INTO dogs (dog_name, breed, user_id) VALUES ($1, $2, $3);', 
+            client.query(`WITH new_dog_temp_table AS (INSERT INTO dogs (dog_name, breed, user_id) VALUES ($1, $2, $3)
+            returning id)
+            
+            
+            INSERT INTO dogs_commands (dog_id, commands_id)
+            VALUES 
+            ((SELECT id FROM new_dog_temp_table), '1'),
+            ((SELECT id FROM new_dog_temp_table), '2'),
+            ((SELECT id FROM new_dog_temp_table), '3'),
+            ((SELECT id FROM new_dog_temp_table), '4'),
+            ((SELECT id FROM new_dog_temp_table), '5'),
+            ((SELECT id FROM new_dog_temp_table), '6'),
+            ((SELECT id FROM new_dog_temp_table), '7'),
+            ((SELECT id FROM new_dog_temp_table), '8'
+            );
+            `, 
             [req.body.dog_name, req.body.breed, req.user.id], function(errorMakingQuery, result) {
 				done();
 				if(errorMakingQuery) {
