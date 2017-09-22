@@ -13,7 +13,7 @@ body, html {
 .instructions {
   background-color: #333333;
   color: #DDDDDD;
-  padding: 15px;
+  padding: 10px;
 }
 
 #entryForm {
@@ -51,7 +51,7 @@ body, html {
 .navbar {
   background-color: #333333;
   width: 100%;
-  border-radius: 0px;
+  /* border-radius: 0px; */
 }
 
 ul {

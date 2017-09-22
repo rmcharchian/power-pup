@@ -32,14 +32,12 @@
        <label for="breed" aria-placeholder="Breed">Breed</label>
        <input type="text" placeholder ="Breed" ng-model="lc.newDog.breed">
 
-       <label for="Image URL" >Image URL</label>
-       <input type="text" placeholder ="Image URL Optional "ng-model="lc.newDog.imageurl">
+       <label for="Image URL" >Image URL(Optional)</label>
+       <!-- <input type="text" placeholder ="Image URL Optional "ng-model="lc.newDog.imageurl"> -->
 
-       <!-- FILESTACK -->
-       <!-- <button ng-click="lc.showPicker()"></button>
-       <input type="button" value="Upload" onclick="vm.showPicker()" /> -->
-   
-       <button ng-click="lc.addDog(lc.newDog)">Submit</button>
+       <input type="button" value="Upload" ng-click="lc.showPicker()" />
+        <br>
+       <button ng-click="lc.addDog(lc.newDog)">Submit New Dog</button>
    <br>
 
    

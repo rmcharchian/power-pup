@@ -15,23 +15,15 @@ UserService.logout();
 DogService.currentDog=[];
     };
 
-    //FILESTACK
-    // vm.client = filestack.init('A1SPIH3lDTX2G1gQi8PaWz');
-    // vm.showPicker=function () {
-    //     vm.client.pick({
-    //     }).then(function(result) {
-
-    //         console.log(JSON.stringify(result.filesUploaded[0].url))
-    //     });
-   //}
-
-
-
-
-
-
-
-
-
   });
   
+  // vm.client = filestack.init('AOxruw8HTHChjTQjVfU0rz');
+  // vm.showPicker = function () {
+  //     vm.client.pick({
+  //         accept: 'image/*'
+  //         // imageMax: [600, 400]
+  //     }).then(function (result) {
+  //         vm.newPath.photos = result.filesUploaded[0].url;
+  //     });
+
+  // }
