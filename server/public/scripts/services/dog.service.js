@@ -63,23 +63,3 @@ self.getDetails();
 
         
 }]);
-
-
-
-       // self.getFilestackImage = function() {
-        //     // example request:
-        //     // http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5
-        //     var baseUrl = 'https://www.filestackapi.com/api/file/DCL5K46FS3OIxb5iuKby';
-        //     baseUrl += 'api_key=' + giphyAPIKey;    // api key
-        //     baseUrl += '&limit=5';  // limit
-        //     baseUrl += '&rating=g'; // rating
-    
-        //     console.log('baseUrl: ', baseUrl);
-            
-        //     $http.get(baseUrl).then(function(response) {
-        //         console.log('filestack image ', response.data);
-                
-        //     });
-        // };
-    
-        // self.getFilestackImage();

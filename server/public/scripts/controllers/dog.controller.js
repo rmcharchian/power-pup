@@ -14,16 +14,5 @@ myApp.controller('DogController', function(DogService, UserService) {
 UserService.logout();
 DogService.currentDog=[];
     };
-
   });
   
-  // vm.client = filestack.init('AOxruw8HTHChjTQjVfU0rz');
-  // vm.showPicker = function () {
-  //     vm.client.pick({
-  //         accept: 'image/*'
-  //         // imageMax: [600, 400]
-  //     }).then(function (result) {
-  //         vm.newPath.photos = result.filesUploaded[0].url;
-  //     });
-
-  // }
