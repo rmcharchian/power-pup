@@ -6,8 +6,8 @@ body, html {
   /* background-image: url("http://cdn1-www.dogtime.com/assets/uploads/2011/04/file_2153_column_popular-dog-names.jpg");
   background-repeat: no-repeat;
   //background-attachment: fixed; */
-  background-position: center;
-  background-color: #5C98AF;
+  /* background-position: center; */
+  background-color: #2877d2;
 }
 
 .instructions .container h1 {
@@ -16,8 +16,8 @@ body, html {
 }
 
 .instructions {
-  background-color: #5C98AF;
-  color: #DDDDDD;
+  background-color: #2877d2;
+  color: #3b200a;
   padding: 10px;
 }
 
@@ -54,9 +54,9 @@ body, html {
 }
 
 .navbar {
-  background-color: #C58A1E;
+  background-color: #fd862c;
   width: 100%;
-  /* border-radius: 0px; */
+  border-radius: 0px; 
 }
 
 ul {
@@ -73,7 +73,7 @@ li {
 li a {
   display: block;
   /* color: white; */
-  color: black
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -83,15 +83,16 @@ li a {
 li a:hover {
   text-decoration: underline;
   /* color: #eee; */
-  color: black
+  color: #3b200a
 }
 
 .allDogs li {
   float: none;
   text-align: center;
-  text-decoration-color: black;
+  text-decoration-color: #3b200a;
 }
 
 #scraps {
-  color: black
+  color: #3b200a;
 }
+
