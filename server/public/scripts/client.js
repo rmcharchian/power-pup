@@ -14,12 +14,12 @@ myApp.config(function($routeProvider, $locationProvider) {
       controller: 'LoginController as lc'
     })
     .when('/dog', {  
-    templateUrl: '/views/templates/dog.html',
-    controller: 'DogController as lc'
+      templateUrl: '/views/templates/dog.html',
+      controller: 'DogController as lc'
     })
-      .when('/training', {  
-        templateUrl: '/views/templates/training.html',
-        controller: 'TrainingController as lc'
+    .when('/training', {  
+      templateUrl: '/views/templates/training.html',
+      controller: 'TrainingController as lc'
         }) 
     .when('/commands', {
       templateUrl: '/views/templates/info.html',
@@ -56,24 +56,5 @@ myApp.config(function($routeProvider, $locationProvider) {
     });
 });
 
-// var self = this;
-// var filestackAPIKey = 'AaN98nhRTamCfV3Suca0Zz';
 
-
-
-// self.getFilestackImage = function() {
-//   // example request:
-//   // http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5
-//   var baseUrl = 'http://api.giphy.com/v1/gifs/trending?';
-//   baseUrl += 'api_key=' + giphyAPIKey;    // api key
-//   baseUrl += '&limit=5';  // limit
-//   baseUrl += '&rating=g'; // rating
-
-//   console.log('baseUrl: ', baseUrl);
-  
-//   $http.get(baseUrl).then(function(response) {
-//       console.log('trendaing giphys ', response.data);
-      
-//   });
-// };
 

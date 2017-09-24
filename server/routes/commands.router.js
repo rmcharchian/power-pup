@@ -19,29 +19,6 @@ router.get('/', function(req, res){
         }
     });
 });
-
-// router.post('/', function(req, res){
-// 	console.log('command post was hit!');
-// 	// Add an INSERT query
-// 	pool.connect(function(errorConnectingToDatabase, client, done){
-// 		if(errorConnectingToDatabase) {
-// 			// when connecting to database failed
-// 			console.log('Error connecting to database', errorConnectingToDatabase);
-// 			res.sendStatus(500);
-// 		} else {
-// 			// when connecting to database worked!
-//             client.query('INSERT INTO commands (command, description) VALUES ($1, $2);', 
-//             [req.body.command, req.body.description], function(errorMakingQuery, result) {
-// 				done();
-// 				if(errorMakingQuery) {
-// 					console.log('Error making database query', errorMakingQuery);
-// 					res.sendStatus(500);
-// 				} else {
-// 					res.sendStatus(201);
-// 				}
-// 			});
-// 		}
-//     });
-// });    
+   
 
 module.exports = router;

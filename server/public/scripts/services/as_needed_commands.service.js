@@ -12,15 +12,6 @@ myApp.service('AsNeededCommandsService', ['$http', function ($http) {
             })
         }
 
-        // self.addDog=function (newDog) {
-        //     console.log('button clicked');
-        //     console.log(newDog);
-        //     $http.post('/dog', newDog).then(function (response) {
-        //         console.log('post item', response);
-        //         self.getDog();
-        //     })
-        // }
-
  
         self.getAsNeededCommands();
 }]);

@@ -1,38 +1,35 @@
-<!-- # Name of Project
+# Power Pup!
 
-One Paragraph of project description goes here. Link to the live version of the app if it's hosted on Heroku.
+Power Pup was created to help simply the training of simple commands to a do, and to help track that a certain number of repitions of training are taking place each day.
 
 ## Built With
 
-List technologies and frameworks here
+Power Pup used the following technologies:
+SQL
+Express
+AngularJS
+Angular Route
+Node
+Postico
+Bootstrap
+Passport
+jQuery (related to Bootstrap)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+No additional notes.
 
 ### Prerequisites
 
 Link to software that is required to install the app (e.g. node).
 
-- [Node.js](https://nodejs.org/en/)
-- List other prerequisites here
-
+No additional notes.
 
 ### Installing
 
 Steps to get the development environment running.
 
-```sql
-CREATE TABLE "users" (
-  "id" serial primary key,
-  "username" varchar(80) not null UNIQUE,
-  "password" varchar(240) not null
-);
-```
-
-## Screen Shot
-
-Include one or two screen shots of your project here (optional). Remove if unused.
+See sql.db for documentation to run data locally.
 
 ## Documentation
 
@@ -42,14 +39,20 @@ Link to a read-only version of your scope document or other relevant documentati
 
 High level list of items completed.
 
-- [x] Feature a
-- [x] Feature b
+[x] Views and route params working together
+[x] Database flowing through to DOM
+[x] Ability to increase number of training reps and flowthrough to DB.
+[x] Ability to add a dog with the same options for command training.
 
 ### Next Steps
 
 Features that you would like to add at some point in the future.
 
-- [ ] Feature c
+[ ] Add ability to download image
+[ ] Add ability to add additional commands
+[ ] Add ability to remove commands
+[ ] Add ability for app to remind users that reps are not complete
+[ ] Add ability for mulitple users to train one dog
 
 ## Deployment
 
@@ -57,13 +60,8 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* Name of author(s)
-
+Roxie Charchian
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used -->
-
-## Stretch Goals
-Add male/female to DB and Add a Dog
-
+Thank you to my Prime instructors and cohort in providing feedback and guidance throughout the development of this application.
