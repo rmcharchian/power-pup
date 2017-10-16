@@ -44,3 +44,10 @@ app.use('/', indexRouter);
 app.listen(port, function(){
    console.log('Listening on port:', port);
 });
+
+if(process.env.DATABASE_URL != undefined) {
+    connectionString = process.env.DATABASE_URL + "?ssl=true";
+} else {
+    // running locally, use our local database instead
+    connectionString = 'postgres://localhost:5432/dec30i89ia7c48';
+}
